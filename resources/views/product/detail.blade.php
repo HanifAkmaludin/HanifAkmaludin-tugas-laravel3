@@ -2,9 +2,15 @@
 
 @section('content')
 <section>
+    @if(session()->has("logged"))
     <a href="{{ route('product.list') }}" class="w-[40px] h-[40px] bg-slate-300 rounded-full flex justify-center items-center mt-10 ml-10">
         <i class="fa-solid fa-arrow-left text-xl"></i>
     </a>
+    @else
+    <a href="{{ route('homepage') }}" class="w-[40px] h-[40px] bg-slate-300 rounded-full flex justify-center items-center mt-10 ml-10">
+        <i class="fa-solid fa-arrow-left text-xl"></i>
+    </a>
+    @endif
     <h1 class="text-center text-4xl font-light uppercase">Detail Product</h1>
     <div class="container flex pt-10 gap-10">
         <div class="card-img w-[40%]">

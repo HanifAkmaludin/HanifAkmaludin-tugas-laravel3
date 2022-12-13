@@ -14,3 +14,7 @@
     background: grey;
     border-radius: 20px;
 }
+
+.card-login {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+}

@@ -2,7 +2,7 @@
 
 @section('content')
 @include('components.navbar')
-    <section>
+    <section class="pt-20">
         <div class="container pt-10">
             <h1 class="text-center text-4xl font-light uppercase mb-10">Daftar Product</h1>
             <a href="{{ route('product.store') }}" class="py-2 px-4 bg-green-400 rounded-lg hover:bg-green-400/70 text-white">Tambah Product</a>

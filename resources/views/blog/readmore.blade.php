@@ -2,9 +2,15 @@
 
 @section('content')
 <section>
+    @if(session()->has("logged"))
     <a href="{{ route('blog.list') }}" class="w-[40px] h-[40px] bg-slate-300 rounded-full flex justify-center items-center mt-10 ml-10">
         <i class="fa-solid fa-arrow-left text-xl"></i>
     </a>
+    @else
+    <a href="{{ route('homepage') }}" class="w-[40px] h-[40px] bg-slate-300 rounded-full flex justify-center items-center mt-10 ml-10">
+        <i class="fa-solid fa-arrow-left text-xl"></i>
+    </a>
+    @endif
     <div class="container w-[70%]">
         <h1 class="text-4xl">{{ $blog->judul }}</h1>
         <div class="my-10">

@@ -2,7 +2,7 @@
 
 @section('content')
 @include("components.navbar")
-<section id="product">
+<section id="product" class="pt-20">
     <div class="container pt-10">
             <h1 class="text-center text-4xl font-light uppercase mb-10">Product</h1>
             <div class="flex mt-10 flex-wrap gap-[40px]">
